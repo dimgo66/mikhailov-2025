@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Игорь Михайлов</title>
+    <meta name="description" content="Фотографии и видео Игоря Михайлова (Игоря Михайловича Попова) - портреты, выступления, презентации книг, интервью.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">Игорь Михайлов</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="biography.html">Биография</a></li>
+                        <li><a href="works.html">Творчество</a></li>
+                        <li><a href="books.html">Книги</a></li>
+                        <li><a href="magazines.html">Журналы</a></li>
+                        <li><a href="bibliography.html">Библиография</a></li>
+                        <li><a href="gallery.html" class="active">Галерея</a></li>
+                        <li><a href="downloads.html">Материалы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content gallery-page">
+        <div class="page-header">
+            <div class="container">
+                <h1>Галерея</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Главная</a> &gt; <span>Галерея</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="gallery-navigation">
+            <div class="container">
+                <div class="gallery-tabs">
+                    <a href="#photos" class="gallery-tab active" data-tab="photos">Фотографии</a>
+                    <a href="#videos" class="gallery-tab" data-tab="videos">Видео</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="photos" class="gallery-section active">
+            <div class="container">
+                <div class="gallery-filters">
+                    <button class="gallery-filter active" data-filter="all">Все</button>
+                    <button class="gallery-filter" data-filter="portraits">Портреты</button>
+                    <button class="gallery-filter" data-filter="events">Мероприятия</button>
+                    <button class="gallery-filter" data-filter="books">Книги</button>
+                    <button class="gallery-filter" data-filter="magazines">Журналы</button>
+                </div>
+
+                <div class="photo-gallery">
+                    <div class="gallery-item" data-category="portraits">
+                        <picture>
+                            <source srcset="images/photos/igor_mikhailov_portrait.webp" type="image/webp">
+                            <img src="images/photos/igor_mikhailov_portrait.jpg" alt="Портрет Игоря Михайлова">
+                        </picture>
+                        <div class="gallery-caption">Портрет Игоря Михайлова, 2020</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="portraits">
+                        <picture>
+                            <source srcset="images/photos/igor_mikhailov_portrait2.webp" type="image/webp">
+                            <img src="images/photos/igor_mikhailov_portrait2.jpg" alt="Портрет Игоря Михайлова в профиль">
+                        </picture>
+                        <div class="gallery-caption">Игорь Михайлов, фотосессия для журнала "Литературная Россия", 2019</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/photos/book_presentation.jpg" alt="Презентация книги">
+                        <div class="gallery-caption">Презентация книги "Дольке Вита" в книжном магазине "Москва", 2020</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/photos/literature_festival.jpg" alt="Литературный фестиваль">
+                        <div class="gallery-caption">Выступление на литературном фестивале "Текст", 2021</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="magazines">
+                        <img src="images/magazines/yunost-meeting.jpg" alt="Редакция журнала Юность">
+                        <div class="gallery-caption">В редакции журнала "Юность", 2015</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="magazines">
+                        <img src="images/magazines/vtornik-first-issue.jpg" alt="Первый выпуск журнала Вторник">
+                        <div class="gallery-caption">Презентация первого выпуска журнала "Вторник", 2019</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="books">
+                        <picture>
+                            <source srcset="images/book-covers/dolke_vita_cover.webp" type="image/webp">
+                            <img src="images/book-covers/dolke_vita_cover.png" alt="Обложка книги Дольке Вита">
+                        </picture>
+                        <div class="gallery-caption">Обложка книги "Дольке Вита", 2020</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="books">
+                        <picture>
+                            <source srcset="images/book-covers/ne_kniga_imen_cover.webp" type="image/webp">
+                            <img src="images/book-covers/ne_kniga_imen_cover.png" alt="Обложка книги Не книга имён">
+                        </picture>
+                        <div class="gallery-caption">Обложка книги "Не книга имён", 2022</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/photos/lecture.jpg" alt="Лекция в университете">
+                        <div class="gallery-caption">Лекция о современной литературе в МГУ, 2023</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="images/photos/signing.jpg" alt="Автограф-сессия">
+                        <div class="gallery-caption">Автограф-сессия на Московской международной книжной ярмарке, 2022</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="portraits">
+                        <img src="images/photos/igor_mikhailov_writing.jpg" alt="Игорь Михайлов за работой">
+                        <div class="gallery-caption">Игорь Михайлов за работой в своём кабинете, 2021</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="magazines">
+                        <img src="images/magazines/editorial_meeting.jpg" alt="Редакционное собрание">
+                        <div class="gallery-caption">Редакционное собрание журнала "Вторник", 2022</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-load-more">
+                    <button id="load-more-photos" class="btn btn-secondary">Загрузить ещё</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="gallery-section">
+            <div class="container">
+                <div class="gallery-filters">
+                    <button class="gallery-filter active" data-filter="all">Все</button>
+                    <button class="gallery-filter" data-filter="interviews">Интервью</button>
+                    <button class="gallery-filter" data-filter="presentations">Презентации</button>
+                    <button class="gallery-filter" data-filter="readings">Чтения</button>
+                </div>
+
+                <div class="video-gallery">
+                    <div class="video-item" data-category="interviews">
+                        <div class="video-thumbnail">
+                            <img src="images/videos/interview_thumbnail_1.jpg" alt="Интервью о современной литературе">
+                            <div class="play-button"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Интервью о современной литературе</h3>
+                            <p>Игорь Михайлов рассказывает о тенденциях в современной российской прозе.</p>
+                            <p class="video-meta">Канал "Культура", 2022 | Длительность: 25:18</p>
+                            <a href="https://www.youtube.com/watch?v=example1" target="_blank" class="btn btn-outline">Смотреть на YouTube</a>
+                        </div>
+                    </div>
+                    
+                    <div class="video-item" data-category="presentations">
+                        <div class="video-thumbnail">
+                            <img src="images/videos/book_presentation_thumbnail.jpg" alt="Презентация книги 'Не книга имён'">
+                            <div class="play-button"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Презентация книги "Не книга имён"</h3>
+                            <p>Запись презентации в книжном магазине "Москва" с участием литературных критиков.</p>
+                            <p class="video-meta">Книжный магазин "Москва", 2022 | Длительность: 52:07</p>
+                            <a href="https://www.youtube.com/watch?v=example2" target="_blank" class="btn btn-outline">Смотреть на YouTube</a>
+                        </div>
+                    </div>
+                    
+                    <div class="video-item" data-category="readings">
+                        <div class="video-thumbnail">
+                            <img src="images/videos/reading_thumbnail.jpg" alt="Чтение отрывков из книги 'Дольке Вита'">
+                            <div class="play-button"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Чтение отрывков из книги "Дольке Вита"</h3>
+                            <p>Игорь Михайлов читает избранные главы из своей книги путевых заметок.</p>
+                            <p class="video-meta">Литературный клуб "Слово", 2020 | Длительность: 18:35</p>
+                            <a href="https://www.youtube.com/watch?v=example3" target="_blank" class="btn btn-outline">Смотреть на YouTube</a>
+                        </div>
+                    </div>
+                    
+                    <div class="video-item" data-category="interviews">
+                        <div class="video-thumbnail">
+                            <img src="images/videos/tv_interview_thumbnail.jpg" alt="Телевизионное интервью">
+                            <div class="play-button"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Интервью программе "Книжное обозрение"</h3>
+                            <p>Беседа о творческом пути и работе над новыми проектами.</p>
+                            <p class="video-meta">Телеканал "Россия-К", 2023 | Длительность: 35:42</p>
+                            <a href="https://www.youtube.com/watch?v=example4" target="_blank" class="btn btn-outline">Смотреть на YouTube</a>
+                        </div>
+                    </div>
+                    
+                    <div class="video-item" data-category="presentations">
+                        <div class="video-thumbnail">
+                            <img src="images/videos/lecture_thumbnail.jpg" alt="Лекция о литературе">
+                            <div class="play-button"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Лекция "Классика и современность"</h3>
+                            <p>Публичная лекция о взаимосвязи классической и современной литературы.</p>
+                            <p class="video-meta">Библиотека им. Н.А. Некрасова, 2021 | Длительность: 47:15</p>
+                            <a href="https://www.youtube.com/watch?v=example5" target="_blank" class="btn btn-outline">Смотреть на YouTube</a>
+                        </div>
+                    </div>
+                    
+                    <div class="video-item" data-category="readings">
+                        <div class="video-thumbnail">
+                            <img src="images/videos/poetry_reading_thumbnail.jpg" alt="Чтение стихов">
+                            <div class="play-button"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Вечер литературных чтений</h3>
+                            <p>Игорь Михайлов читает отрывки из произведений русских классиков и собственные эссе.</p>
+                            <p class="video-meta">Литературный музей, 2022 | Длительность: 28:50</p>
+                            <a href="https://www.youtube.com/watch?v=example6" target="_blank" class="btn btn-outline">Смотреть на YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-load-more">
+                    <button id="load-more-videos" class="btn btn-secondary">Загрузить ещё</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Игорь Михайлов</h3>
+                    <p>Писатель, журналист, главный редактор</p>
+                    <p>&copy; 2025. Все права защищены.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="biography.html">Биография</a></li>
+                        <li><a href="works.html">Творчество</a></li>
+                        <li><a href="books.html">Книги</a></li>
+                        <li><a href="bibliography.html">Библиография</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Дополнительно</h3>
+                    <ul>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="downloads.html">Материалы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p>Email: <a href="mailto:info@igormihailov.ru">info@igormihailov.ru</a></p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">FB</a>
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">TG</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Дополнительные стили для галереи -->
+    <style>
+        /* Стили для галереи фотографий */
+        .gallery-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .gallery-tab {
+            padding: 1rem 2rem;
+            font-family: var(--ui-font);
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--text-color);
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-tab.active, .gallery-tab:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+        }
+        
+        .gallery-section {
+            display: none;
+            padding: 2rem 0 4rem;
+        }
+        
+        .gallery-section.active {
+            display: block;
+        }
+        
+        .gallery-filters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        .gallery-filter {
+            background: none;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem 0.5rem;
+            font-family: var(--ui-font);
+            font-size: 0.9rem;
+            color: var(--text-color);
+            cursor: pointer;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-filter.active, .gallery-filter:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* Сетка фотографий */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 0.8rem;
+            font-size: 0.9rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        .gallery-load-more {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        /* Стили для видеогалереи */
+        .video-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .video-item {
+            display: flex;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .video-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .video-thumbnail {
+            flex: 0 0 300px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .play-button::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-left: 20px solid white;
+            border-bottom: 10px solid transparent;
+            margin-left: 5px;
+        }
+        
+        .video-item:hover .play-button {
+            background-color: var(--primary-color);
+        }
+        
+        .video-info {
+            flex: 1;
+            padding: 1.5rem;
+        }
+        
+        .video-info h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .video-info p {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+        
+        .video-meta {
+            font-size: 0.85rem !important;
+            color: #777;
+            font-family: var(--ui-font);
+        }
+        
+        .btn-outline {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--primary-color);
+            border-radius: 3px;
+            color: var(--primary-color);
+            font-family: var(--ui-font);
+            font-size: 0.9rem;
+            font-weight: 600;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* Модальное окно для просмотра изображений */
+        .gallery-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-modal-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90vh;
+        }
+        
+        .gallery-modal-content img {
+            max-width: 100%;
+            max-height: 80vh;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-modal-caption {
+            color: white;
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .gallery-modal-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .gallery-modal-close:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 992px) {
+            .video-item {
+                flex-direction: column;
+            }
+            
+            .video-thumbnail {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-tab {
+                padding: 0.8rem 1.2rem;
+                font-size: 1rem;
+            }
+            
+            .photo-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            
+            .gallery-item {
+                height: 200px;
+            }
+        }
+    </style>
+
+    <script src="js/script.js"></script>
+    
+    <!-- Дополнительный скрипт для галереи -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Переключение между фото и видео
+            const galleryTabs = document.querySelectorAll('.gallery-tab');
+            const gallerySections = document.querySelectorAll('.gallery-section');
+            
+            galleryTabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Удаляем активный класс у всех вкладок
+                    galleryTabs.forEach(t => t.classList.remove('active'));
+                    // Добавляем активный класс текущей вкладке
+                    this.classList.add('active');
+                    
+                    // Получаем ID таба
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Скрываем все секции и показываем нужную
+                    gallerySections.forEach(section => {
+                        section.classList.remove('active');
+                        if (section.id === tabId) {
+                            section.classList.add('active');
+                        }
+                    });
+                });
+            });
+            
+            // Фильтрация фотографий
+            const photoFilters = document.querySelectorAll('#photos .gallery-filter');
+            const photoItems = document.querySelectorAll('.photo-gallery .gallery-item');
+            
+            photoFilters.forEach(filter => {
+                filter.addEventListener('click', function() {
+                    const category = this.getAttribute('data-filter');
+                    
+                    // Переключаем активный класс фильтра
+                    photoFilters.forEach(f => f.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Фильтруем элементы
+                    photoItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Фильтрация видео
+            const videoFilters = document.querySelectorAll('#videos .gallery-filter');
+            const videoItems = document.querySelectorAll('.video-gallery .video-item');
+            
+            videoFilters.forEach(filter => {
+                filter.addEventListener('click', function() {
+                    const category = this.getAttribute('data-filter');
+                    
+                    // Переключаем активный класс фильтра
+                    videoFilters.forEach(f => f.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Фильтруем элементы
+                    videoItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Просмотр фотографий в модальном окне
+            photoItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const imgSrc = this.querySelector('img').src;
+                    const caption = this.querySelector('.gallery-caption').textContent;
+                    
+                    // Создаем модальное окно
+                    const modal = document.createElement('div');
+                    modal.className = 'gallery-modal';
+                    
+                    const modalContent = document.createElement('div');
+                    modalContent.className = 'gallery-modal-content';
+                    
+                    const img = document.createElement('img');
+                    img.src = imgSrc;
+                    
+                    const captionEl = document.createElement('div');
+                    captionEl.className = 'gallery-modal-caption';
+                    captionEl.textContent = caption;
+                    
+                    const closeBtn = document.createElement('span');
+                    closeBtn.className = 'gallery-modal-close';
+                    closeBtn.innerHTML = '&times;';
+                    
+                    modalContent.appendChild(img);
+                    modalContent.appendChild(captionEl);
+                    modalContent.appendChild(closeBtn);
+                    modal.appendChild(modalContent);
+                    
+                    document.body.appendChild(modal);
+                    
+                    // Запрещаем прокрутку страницы
+                    document.body.style.overflow = 'hidden';
+                    
+                    // Анимация появления
+                    setTimeout(() => {
+                        modal.style.opacity = '1';
+                    }, 10);
+                    
+                    // Закрытие модального окна
+                    closeBtn.addEventListener('click', closeModal);
+                    modal.addEventListener('click', function(e) {
+                        if (e.target === modal) {
+                            closeModal();
+                        }
+                    });
+                    
+                    function closeModal() {
+                        modal.style.opacity = '0';
+                        setTimeout(() => {
+                            document.body.removeChild(modal);
+                            document.body.style.overflow = '';
+                        }, 300);
+                    }
+                });
+            });
+            
+            // Кнопки "Загрузить еще"
+            const loadMorePhotosBtn = document.getElementById('load-more-photos');
+            const loadMoreVideosBtn = document.getElementById('load-more-videos');
+            
+            if (loadMorePhotosBtn) {
+                loadMorePhotosBtn.addEventListener('click', function() {
+                    this.textContent = 'Загрузка...';
+                    
+                    // Имитация загрузки
+                    setTimeout(() => {
+                        this.textContent = 'Все фотографии загружены';
+                        this.disabled = true;
+                        this.style.opacity = '0.6';
+                    }, 1000);
+                });
+            }
+            
+            if (loadMoreVideosBtn) {
+                loadMoreVideosBtn.addEventListener('click', function() {
+                    this.textContent = 'Загрузка...';
+                    
+                    // Имитация загрузки
+                    setTimeout(() => {
+                        this.textContent = 'Все видео загружены';
+                        this.disabled = true;
+                        this.style.opacity = '0.6';
+                    }, 1000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

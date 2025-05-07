@@ -1,0 +1,336 @@
+/* 
+ * Типографика и текстовые компоненты для сайта Игоря Михайлова
+ */
+
+/* Основные правила типографики */
+body {
+    font-kerning: normal;
+    font-feature-settings: "kern", "liga", "clig", "calt";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Заголовки с декоративными элементами */
+h1.decorated {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+h1.decorated::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+h2.decorated {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2.decorated::before {
+    content: '❦';
+    color: var(--accent-color);
+    margin-right: 10px;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+h2.decorated::after {
+    content: '❦';
+    color: var(--accent-color);
+    margin-left: 10px;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+/* Стилизованные цитаты */
+.literary-quote {
+    font-family: var(--heading-font);
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: var(--primary-color);
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    position: relative;
+    background-color: rgba(245, 241, 227, 0.7);
+    border-left: none;
+}
+
+.literary-quote::before {
+    content: '«';
+    font-family: Georgia, serif;
+    font-size: 5rem;
+    position: absolute;
+    left: 0.2rem;
+    top: -1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+}
+
+.literary-quote::after {
+    content: '»';
+    font-family: Georgia, serif;
+    font-size: 5rem;
+    position: absolute;
+    right: 0.2rem;
+    bottom: -1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+}
+
+.literary-quote cite {
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    text-align: right;
+    margin-top: 1rem;
+    font-family: var(--ui-font);
+    font-size: 0.9rem;
+}
+
+/* Выделенный первый буквица */
+.first-letter {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    float: left;
+    font-size: 4.5rem;
+    line-height: 0.8;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+}
+
+/* Стилизованная буквица для первого абзаца */
+.first-paragraph::first-letter {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    float: left;
+    font-size: 4.5rem;
+    line-height: 0.8;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+}
+
+/* Выделенный абзац (лид) */
+.lead {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+/* Аннотация книги */
+.book-annotation {
+    font-style: italic;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Стилизованные списки для библиографии */
+.bibliography-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.bibliography-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+.bibliography-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.bibliography-year {
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+}
+
+/* Стилизованные метки дат для хронологии */
+.date-tag {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-family: var(--ui-font);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-right: 0.8rem;
+}
+
+/* Сноски */
+.footnote {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+    border-top: 1px solid var(--light-gray);
+    padding-top: 1.5rem;
+    margin-top: 3rem;
+}
+
+.footnote-marker {
+    font-size: 0.7rem;
+    vertical-align: super;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-left: 3px;
+}
+
+/* Типографские украшения */
+.divider {
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--accent-color);
+}
+
+.divider::before {
+    content: '❦ ❦ ❦';
+    font-size: 1.2rem;
+    letter-spacing: 1rem;
+}
+
+/* Стилизованные ссылки для текста */
+.inline-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--primary-color);
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.inline-link:hover {
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+/* Подпись под изображением */
+.image-caption {
+    font-family: var(--ui-font);
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+    color: #555;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Стилизованные подзаголовки */
+.subtitle {
+    font-family: var(--ui-font);
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+/* Выделенная историческая дата */
+.historical-date {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Выделение произведений в тексте */
+.work-title {
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Адресный блок */
+.address-block {
+    font-style: normal;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--light-gray);
+}
+
+/* Эпиграф */
+.epigraph {
+    font-style: italic;
+    text-align: right;
+    max-width: 80%;
+    margin-left: auto;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.epigraph p {
+    margin-bottom: 0.5rem;
+}
+
+.epigraph cite {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Поэтический текст */
+.poetry {
+    font-family: var(--body-font);
+    line-height: 1.8;
+    margin: 2rem 0;
+    padding-left: 2rem;
+}
+
+.poetry p {
+    margin-bottom: 1.2rem;
+}
+
+/* Колонки для текста */
+.text-columns-2 {
+    column-count: 2;
+    column-gap: 2.5rem;
+    column-rule: 1px solid var(--light-gray);
+    margin: 2rem 0;
+}
+
+.text-columns-3 {
+    column-count: 3;
+    column-gap: 2.5rem;
+    column-rule: 1px solid var(--light-gray);
+    margin: 2rem 0;
+}
+
+@media (max-width: 992px) {
+    .text-columns-3 {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-columns-2,
+    .text-columns-3 {
+        column-count: 1;
+    }
+    
+    .literary-quote {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+}

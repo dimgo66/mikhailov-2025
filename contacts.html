@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Игорь Михайлов</title>
+    <meta name="description" content="Контактная информация писателя Игоря Михайлова (Игоря Михайловича Попова). Форма обратной связи, контакты для СМИ и издательств.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">Игорь Михайлов</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="biography.html">Биография</a></li>
+                        <li><a href="works.html">Творчество</a></li>
+                        <li><a href="books.html">Книги</a></li>
+                        <li><a href="magazines.html">Журналы</a></li>
+                        <li><a href="bibliography.html">Библиография</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="downloads.html">Материалы</a></li>
+                        <li><a href="contacts.html" class="active">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content contacts-page">
+        <div class="page-header">
+            <div class="container">
+                <h1>Контакты</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Главная</a> &gt; <span>Контакты</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="contacts-intro">
+            <div class="container">
+                <p class="lead">На этой странице вы найдете контактную информацию для связи с Игорем Михайловым. Если у вас есть вопросы, предложения о сотрудничестве или вы хотите пригласить автора на мероприятие, воспользуйтесь формой обратной связи или контактами, указанными ниже.</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-form-container">
+                        <h2>Форма обратной связи</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Ваш email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Тема сообщения</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Сообщение <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">Я согласен на обработку персональных данных в соответствии с <a href="privacy-policy.html">политикой конфиденциальности</a> <span class="required">*</span></label>
+                            </div>
+                            
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info-container">
+                        <h2>Контактная информация</h2>
+                        
+                        <div class="contact-category">
+                            <h3>Для читателей и общих вопросов</h3>
+                            <p><strong>Email:</strong> <a href="mailto:info@igormihailov.ru">info@igormihailov.ru</a></p>
+                            <p>На личные сообщения читателей автор старается отвечать в течение 7-10 рабочих дней.</p>
+                        </div>
+                        
+                        <div class="contact-category">
+                            <h3>Для СМИ и интервью</h3>
+                            <p><strong>Email:</strong> <a href="mailto:press@igormihailov.ru">press@igormihailov.ru</a></p>
+                            <p><strong>Телефон:</strong> <a href="tel:+74951234567">+7 (495) 123-45-67</a> (пресс-секретарь)</p>
+                        </div>
+                        
+                        <div class="contact-category">
+                            <h3>Для издательств и публикаций</h3>
+                            <p><strong>Email:</strong> <a href="mailto:publishing@igormihailov.ru">publishing@igormihailov.ru</a></p>
+                        </div>
+                        
+                        <div class="contact-category">
+                            <h3>Журнал «Вторник»</h3>
+                            <p><strong>Официальный сайт:</strong> <a href="https://vtornik-journal.ru" target="_blank">vtornik-journal.ru</a></p>
+                            <p><strong>Email редакции:</strong> <a href="mailto:editor@vtornik-journal.ru">editor@vtornik-journal.ru</a></p>
+                        </div>
+                        
+                        <div class="social-media">
+                            <h3>Социальные сети</h3>
+                            <div class="social-links">
+                                <a href="https://facebook.com/igormihailov" target="_blank" class="social-link"><i class="social-icon facebook"></i> Facebook</a>
+                                <a href="https://vk.com/igormihailov" target="_blank" class="social-link"><i class="social-icon vk"></i> ВКонтакте</a>
+                                <a href="https://t.me/igormihailov" target="_blank" class="social-link"><i class="social-icon telegram"></i> Telegram</a>
+                                <a href="https://instagram.com/igormihailov" target="_blank" class="social-link"><i class="social-icon instagram"></i> Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-section">
+            <div class="container">
+                <h2 class="section-title">Приглашение на мероприятия</h2>
+                <div class="events-info">
+                    <p>Если вы хотите пригласить Игоря Михайлова для участия в литературном мероприятии, творческом вечере, дискуссии или лекции, пожалуйста, напишите на адрес <a href="mailto:events@igormihailov.ru">events@igormihailov.ru</a> с указанием следующей информации:</p>
+                    <ul>
+                        <li>Название и формат мероприятия</li>
+                        <li>Дата, время и место проведения</li>
+                        <li>Тема выступления/участия</li>
+                        <li>Организатор мероприятия и контактные данные</li>
+                        <li>Дополнительная информация, которую вы считаете важной</li>
+                    </ul>
+                    <p>Обратите внимание, что график мероприятий планируется заранее, поэтому мы рекомендуем направлять запросы не менее чем за 1-2 месяца до предполагаемой даты.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Можно ли получить автограф или подписанную книгу?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, автор регулярно проводит автограф-сессии на презентациях новых книг и литературных фестивалях. Информация о таких мероприятиях публикуется в разделе «Новости» и в социальных сетях автора. Также вы можете направить запрос на подписанный экземпляр книги через форму обратной связи, и мы сообщим вам о возможности и условиях получения такого экземпляра.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Как отправить рукопись для публикации в журнале «Вторник»?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Для рассмотрения возможности публикации в журнале «Вторник», отправьте вашу рукопись на электронный адрес редакции: <a href="mailto:submissions@vtornik-journal.ru">submissions@vtornik-journal.ru</a>. В теме письма укажите «Рукопись для рассмотрения» и жанр произведения. Предварительно ознакомьтесь с требованиями к рукописям на официальном сайте журнала.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Проводит ли Игорь Михайлов мастер-классы или консультации для начинающих авторов?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, Игорь Михайлов проводит мастер-классы и творческие семинары для авторов разного уровня подготовки. Информация о предстоящих мастер-классах публикуется в разделе «Новости». Также при журнале «Вторник» действует Школа молодого автора, куда можно подать заявку на участие через сайт журнала.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Можно ли перепечатать произведения Игоря Михайлова в своем издании или на сайте?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Все произведения Игоря Михайлова защищены авторским правом. Для получения разрешения на перепечатку или иное использование текстов необходимо направить запрос на адрес: <a href="mailto:rights@igormihailov.ru">rights@igormihailov.ru</a>. В запросе укажите, какое именно произведение вы хотели бы использовать, в каком формате и с какой целью.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Игорь Михайлов</h3>
+                    <p>Писатель, журналист, главный редактор</p>
+                    <p>&copy; 2025. Все права защищены.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="biography.html">Биография</a></li>
+                        <li><a href="works.html">Творчество</a></li>
+                        <li><a href="books.html">Книги</a></li>
+                        <li><a href="bibliography.html">Библиография</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Дополнительно</h3>
+                    <ul>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="downloads.html">Материалы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p>Email: <a href="mailto:info@igormihailov.ru">info@igormihailov.ru</a></p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">FB</a>
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">TG</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Дополнительные стили для страницы контактов -->
+    <style>
+        /* Стили для страницы контактов */
+        .contacts-intro {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        
+        .contact-wrapper {
+            display: flex;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+        
+        .contact-form-container {
+            flex: 1;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-info-container {
+            flex: 1;
+            background-color: #f8f8f8;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form-container h2,
+        .contact-info-container h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        /* Форма обратной связи */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            margin-bottom: 0.5rem;
+            font-family: var(--ui-font);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            padding: 0.8rem;
+            border: 1px solid var(--light-gray);
+            border-radius: 4px;
+            font-family: var(--ui-font);
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(26, 58, 99, 0.2);
+        }
+        
+        .checkbox-group {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        
+        .checkbox-group input {
+            margin-top: 0.25rem;
+        }
+        
+        .checkbox-group label {
+            font-weight: 400;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        
+        .required {
+            color: var(--accent-color);
+        }
+        
+        .form-submit {
+            margin-top: 1rem;
+        }
+        
+        /* Контактная информация */
+        .contact-category {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-category h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        .contact-category p {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .social-media h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: white;
+            border-radius: 20px;
+            font-family: var(--ui-font);
+            font-size: 0.9rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-icon {
+            width: 20px;
+            height: 20px;
+            background-color: currentColor;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+        }
+        
+        .facebook {
+            color: #1877F2;
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z'/%3E%3C/svg%3E");
+        }
+        
+        .vk {
+            color: #45668e;
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M21.547 7h-3.29a.743.743 0 0 0-.655.392s-1.312 2.416-1.734 3.23C14.734 12.573 14 12.59 14 11.539V7.806c0-.468-.2-.806-.515-.806h-3.07c-.289 0-.518.245-.518.537 0 .563.85.692.935 2.275v2.785c0 .695-.126.82-.405.82-.735 0-2.52-2.537-3.58-5.44-.206-.58-.41-.809-.817-.809H2.731c-.52 0-.624.245-.624.538 0 .5.09 1.982 4.473 9.439C9.353 21.372 13.18 22 15.125 22c1.137 0 1.275-.245 1.275-.865v-1.99c0-.636.147-.743.64-.743 1.352 0 3.64.426 4.154 3.955.096.538.246.689.63.689h3.039c.433 0 .64-.215.64-.537.158-1.703-2.05-3.587-2.122-3.76-.433-.538-.301-.775 0-1.25 0 0 3.555-4.727 3.922-6.32.182-.414 0-.715-.384-.715z'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M21.547 7h-3.29a.743.743 0 0 0-.655.392s-1.312 2.416-1.734 3.23C14.734 12.573 14 12.59 14 11.539V7.806c0-.468-.2-.806-.515-.806h-3.07c-.289 0-.518.245-.518.537 0 .563.85.692.935 2.275v2.785c0 .695-.126.82-.405.82-.735 0-2.52-2.537-3.58-5.44-.206-.58-.41-.809-.817-.809H2.731c-.52 0-.624.245-.624.538 0 .5.09 1.982 4.473 9.439C9.353 21.372 13.18 22 15.125 22c1.137 0 1.275-.245 1.275-.865v-1.99c0-.636.147-.743.64-.743 1.352 0 3.64.426 4.154 3.955.096.538.246.689.63.689h3.039c.433 0 .64-.215.64-.537.158-1.703-2.05-3.587-2.122-3.76-.433-.538-.301-.775 0-1.25 0 0 3.555-4.727 3.922-6.32.182-.414 0-.715-.384-.715z'/%3E%3C/svg%3E");
+        }
+        
+        .telegram {
+            color: #0088cc;
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z'/%3E%3C/svg%3E");
+        }
+        
+        .instagram {
+            color: #E4405F;
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.897 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.897-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.897 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.897-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z'/%3E%3C/svg%3E");
+        }
+        
+        /* Секция для приглашений */
+        .events-section {
+            background-color: #f8f8f8;
+            padding: 3rem 0;
+        }
+        
+        .events-info {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .events-info p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .events-info ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .events-info ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* FAQ секция */
+        .faq-section {
+            padding: 4rem 0;
+        }
+        
+        .faq-list {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid var(--light-gray);
+            margin-bottom: 1rem;
+        }
+        
+        .faq-question {
+            padding: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+        
+        .faq-question h3 {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+        
+        .faq-toggle {
+            font-size: 1.5rem;
+            font-weight: 700;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.5s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding-bottom: 1.5rem;
+            max-height: 500px;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 992px) {
+            .contact-wrapper {
+                flex-direction: column;
+            }
+            
+            .social-link {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .contact-form-container,
+            .contact-info-container {
+                padding: 1.5rem;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .events-info {
+                padding: 1.5rem;
+            }
+            
+            .faq-question h3 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+
+    <script src="js/script.js"></script>
+    
+    <!-- Дополнительный скрипт для страницы контактов -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Обработка формы обратной связи
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Простая валидация формы
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const message = document.getElementById('message').value.trim();
+                    
+                    if (name === '' || email === '' || message === '') {
+                        alert('Пожалуйста, заполните все обязательные поля формы.');
+                        return;
+                    }
+                    
+                    // Имитация отправки формы
+                    contactForm.innerHTML = `
+                        <div class="form-success">
+                            <h3>Спасибо за ваше сообщение!</h3>
+                            <p>Ваше сообщение успешно отправлено. Мы свяжемся с вами в ближайшее время.</p>
+                        </div>
+                    `;
+                    
+                    // Добавляем стили для сообщения об успешной отправке
+                    const style = document.createElement('style');
+                    style.textContent = `
+                        .form-success {
+                            text-align: center;
+                            padding: 2rem;
+                        }
+                        
+                        .form-success h3 {
+                            color: #4CAF50;
+                            margin-bottom: 1rem;
+                        }
+                    `;
+                    document.head.appendChild(style);
+                });
+            }
+            
+            // Функционал FAQ
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', function() {
+                    // Закрываем все остальные ответы
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Переключаем текущий ответ
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // Открываем первый вопрос по умолчанию
+            if (faqItems.length > 0) {
+                faqItems[0].classList.add('active');
+            }
+            
+            // Заглушка для ссылок на социальные сети
+            document.querySelectorAll('.social-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Проверяем, что ссылка ведет не на реальную страницу
+                    if (this.getAttribute('href').includes('facebook.com/igormihailov') ||
+                        this.getAttribute('href').includes('vk.com/igormihailov') ||
+                        this.getAttribute('href').includes('t.me/igormihailov') ||
+                        this.getAttribute('href').includes('instagram.com/igormihailov')) {
+                        e.preventDefault();
+                        alert('Эта ссылка представлена в демонстрационных целях и не является действующей.');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

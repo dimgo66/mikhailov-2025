@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книги - Игорь Михайлов</title>
+    <meta name="description" content="Полный список книг Игоря Михайлова (Игоря Михайловича Попова): 'Дольке Вита', 'Не книга имён', 'ЗАО Вражье', 'Письма из недалека' и другие.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">Игорь Михайлов</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="biography.html">Биография</a></li>
+                        <li><a href="works.html">Творчество</a></li>
+                        <li><a href="books.html" class="active">Книги</a></li>
+                        <li><a href="magazines.html">Журналы</a></li>
+                        <li><a href="bibliography.html">Библиография</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="downloads.html">Материалы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content books-page">
+        <div class="page-header">
+            <div class="container">
+                <h1>Книги</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Главная</a> &gt; <span>Книги</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="books-intro">
+            <div class="container">
+                <p class="lead">Игорь Михайлов — автор романов, сборников рассказов и эссе. На этой странице представлены все книги писателя с кратким описанием и возможностью перейти к подробной информации о каждой из них.</p>
+            </div>
+        </section>
+
+        <section class="books-filters">
+            <div class="container">
+                <div class="filters-wrapper">
+                    <div class="filter-group">
+                        <label for="yearFilter">Год издания:</label>
+                        <select id="yearFilter" class="filter-select">
+                            <option value="all">Все годы</option>
+                            <option value="2022">2022</option>
+                            <option value="2020">2020</option>
+                            <option value="2018">2018</option>
+                            <option value="2015">2015</option>
+                            <option value="2010">2010</option>
+                            <option value="2003">2003</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="genreFilter">Жанр:</label>
+                        <select id="genreFilter" class="filter-select">
+                            <option value="all">Все жанры</option>
+                            <option value="novel">Роман</option>
+                            <option value="essays">Эссе</option>
+                            <option value="stories">Рассказы</option>
+                            <option value="travel">Путевые заметки</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="books-shelf">
+            <div class="container">
+                <h2 class="section-title">Книжная полка</h2>
+                
+                <div class="book-display-toggle">
+                    <button class="display-btn active" data-display="grid"><span class="icon-grid"></span> Сетка</button>
+                    <button class="display-btn" data-display="shelf"><span class="icon-shelf"></span> Книжная полка</button>
+                </div>
+                
+                <div class="books-grid active" id="booksGrid">
+                    <!-- Дольке Вита -->
+                    <div class="book-card" data-year="2020" data-genre="travel essays">
+                        <div class="book-card-cover">
+                            <img src="images/book-covers/dolke_vita_cover.png" alt="Дольке Вита">
+                            <div class="book-card-hover">
+                                <a href="books/dolke-vita.html" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="book-card-info">
+                            <h3>Дольке Вита</h3>
+                            <div class="book-meta">
+                                <span class="book-year">2020</span>
+                                <span class="book-genre">Путевые заметки, эссе</span>
+                            </div>
+                            <p class="book-description">Гений места, сердце города или страны — на кончике пера. Весьма возможно, что в Италии, Франции, Америке, Армении, Грузии и Молдове не было ничего примечательного, покуда автор не побывал там.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Не книга имён -->
+                    <div class="book-card" data-year="2022" data-genre="essays">
+                        <div class="book-card-cover">
+                            <img src="images/book-covers/ne_kniga_imen_cover.png" alt="Не книга имён">
+                            <div class="book-card-hover">
+                                <a href="books/ne-kniga-imen.html" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="book-card-info">
+                            <h3>Не книга имён</h3>
+                            <div class="book-meta">
+                                <span class="book-year">2022</span>
+                                <span class="book-genre">Эссе</span>
+                            </div>
+                            <p class="book-description">Полтора десятка эссе о писателях, которых нет смысла поминать всуе, предварительно не прочитав. Отсюда и «не» в названии: по-корейски «не» — это «да».</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Купание в Чухломском озере -->
+                    <div class="book-card" data-year="2018" data-genre="stories">
+                        <div class="book-card-cover">
+                            <img src="images/book-covers/chuxloma.jpg" alt="Купание в Чухломском озере">
+                            <div class="book-card-hover">
+                                <a href="books/kupanie-v-chuhlom-ozere.html" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="book-card-info">
+                            <h3>Купание в Чухломском озере</h3>
+                            <div class="book-meta">
+                                <span class="book-year">2018</span>
+                                <span class="book-genre">Рассказы, эссе</span>
+                            </div>
+                            <p class="book-description">Сборник рассказов и эссе о русской провинции. Традиционная проза, ведущая свою родословную от Гоголя и Чехова. Тональность – грустноватая, но светлая.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- ЗАО Вражье -->
+                    <div class="book-card" data-year="2003" data-genre="novel">
+                        <div class="book-card-cover">
+                            <img src="images/book-covers/book-placeholder.jpg" alt="ЗАО Вражье">
+                            <div class="book-card-hover">
+                                <a href="books/zao-vrazhye.html" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="book-card-info">
+                            <h3>ЗАО Вражье</h3>
+                            <div class="book-meta">
+                                <span class="book-year">2003</span>
+                                <span class="book-genre">Роман</span>
+                            </div>
+                            <p class="book-description">Сатирический роман о современном российском обществе. История о том, как простой человек оказывается втянутым в абсурдный мир бюрократии и корпоративных интриг.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Письма из недалека -->
+                    <div class="book-card" data-year="2010" data-genre="stories">
+                        <div class="book-card-cover">
+                            <img src="images/book-covers/book-placeholder.jpg" alt="Письма из недалека">
+                            <div class="book-card-hover">
+                                <a href="books/pisma-iz-nedaleka.html" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="book-card-info">
+                            <h3>Письма из недалека</h3>
+                            <div class="book-meta">
+                                <span class="book-year">2010</span>
+                                <span class="book-genre">Рассказы</span>
+                            </div>
+                            <p class="book-description">Сборник рассказов о взаимоотношениях между близкими людьми, разделенными расстоянием. Истории, полные тонких наблюдений и психологических деталей.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Марокко с первого взгляда -->
+                    <div class="book-card" data-year="2015" data-genre="travel">
+                        <div class="book-card-cover">
+                            <img src="images/book-covers/book-placeholder.jpg" alt="Марокко с первого взгляда">
+                            <div class="book-card-hover">
+                                <a href="books/marokko.html" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="book-card-info">
+                            <h3>Марокко с первого взгляда</h3>
+                            <div class="book-meta">
+                                <span class="book-year">2015</span>
+                                <span class="book-genre">Путевые заметки</span>
+                            </div>
+                            <p class="book-description">Путевые заметки о путешествии по Марокко. Автор делится своими впечатлениями от посещения этой удивительной североафриканской страны.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="books-3d-shelf" id="booksShelf">
+                    <!-- 3D книжная полка будет отображаться здесь через JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        <section class="books-upcoming">
+            <div class="container">
+                <h2 class="section-title">Новая книга в работе</h2>
+                <div class="upcoming-book">
+                    <div class="upcoming-book-content">
+                        <h3>«Осколки зеркал»</h3>
+                        <p class="lead">Новый сборник эссе Игоря Михайлова, над которым автор работает в настоящее время.</p>
+                        <p>В новой книге автор размышляет о природе творчества, рассматривая эту тему через призму биографий и произведений русских и зарубежных писателей XX-XXI веков.</p>
+                        <p>Ожидаемая дата выхода: весна 2026 года.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Игорь Михайлов</h3>
+                    <p>Писатель, журналист, главный редактор</p>
+                    <p>&copy; 2025. Все права защищены.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="biography.html">Биография</a></li>
+                        <li><a href="works.html">Творчество</a></li>
+                        <li><a href="books.html">Книги</a></li>
+                        <li><a href="bibliography.html">Библиография</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Дополнительно</h3>
+                    <ul>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="downloads.html">Материалы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p>Email: <a href="mailto:info@igormihailov.ru">info@igormihailov.ru</a></p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">FB</a>
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">TG</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Дополнительные стили для страницы книг -->
+    <style>
+        /* Стили для страницы книг */
+        .books-intro {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        
+        .books-filters {
+            background-color: #f8f8f8;
+            padding: 1.5rem 0;
+            margin-bottom: 3rem;
+        }
+        
+        .filters-wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .filter-group {
+            display: flex;
+            align-items: center;
+        }
+        
+        .filter-group label {
+            margin-right: 0.5rem;
+            font-family: var(--ui-font);
+            font-weight: 600;
+        }
+        
+        .filter-select {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--light-gray);
+            border-radius: 4px;
+            font-family: var(--ui-font);
+            background-color: white;
+        }
+        
+        .book-display-toggle {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        .display-btn {
+            background: none;
+            border: 1px solid var(--light-gray);
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            font-family: var(--ui-font);
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+        }
+        
+        .display-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .icon-grid, .icon-shelf {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin-right: 5px;
+            background-color: currentColor;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+        }
+        
+        .icon-grid {
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 3h7v7H3V3zm0 11h7v7H3v-7zm11-11h7v7h-7V3zm0 11h7v7h-7v-7z'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 3h7v7H3V3zm0 11h7v7H3v-7zm11-11h7v7h-7V3zm0 11h7v7h-7v-7z'/%3E%3C/svg%3E");
+        }
+        
+        .icon-shelf {
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H7zm0 12V7h10v10H7z'/%3E%3Cpath d='M3 7c0-2.2 1.8-4 4-4h10c2.2 0 4 1.8 4 4v10c0 2.2-1.8 4-4 4H7c-2.2 0-4-1.8-4-4V7z'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H7zm0 12V7h10v10H7z'/%3E%3Cpath d='M3 7c0-2.2 1.8-4 4-4h10c2.2 0 4 1.8 4 4v10c0 2.2-1.8 4-4 4H7c-2.2 0-4-1.8-4-4V7z'/%3E%3C/svg%3E");
+        }
+        
+        .books-grid, .books-3d-shelf {
+            display: none;
+        }
+        
+        .books-grid.active, .books-3d-shelf.active {
+            display: grid;
+        }
+        
+        .books-grid {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .book-card {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .book-card-cover {
+            position: relative;
+            padding-top: 150%;
+            overflow: hidden;
+        }
+        
+        .book-card-cover img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .book-card-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(26, 58, 99, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .book-card:hover .book-card-hover {
+            opacity: 1;
+        }
+        
+        .book-card-info {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .book-card-info h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .book-meta {
+            margin-bottom: 1rem;
+            font-family: var(--ui-font);
+            font-size: 0.9rem;
+            color: #777;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .book-year {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .book-description {
+            margin-top: auto;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* 3D книжная полка */
+        .books-3d-shelf {
+            position: relative;
+            min-height: 500px;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            margin-bottom: 3rem;
+        }
+        
+        /* Стили для блока о новой книге */
+        .books-upcoming {
+            background-color: #f8f8f8;
+            padding: 3rem 0;
+            margin-top: 3rem;
+        }
+        
+        .upcoming-book {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .upcoming-book h3 {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .books-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .filter-group {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    </style>
+
+    <script src="js/script.js"></script>
+    
+    <!-- Дополнительный скрипт для страницы книг -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Переключение между видами отображения
+            const displayBtns = document.querySelectorAll('.display-btn');
+            const booksGrid = document.getElementById('booksGrid');
+            const booksShelf = document.getElementById('booksShelf');
+            
+            displayBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    displayBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const displayType = this.getAttribute('data-display');
+                    if (displayType === 'grid') {
+                        booksGrid.classList.add('active');
+                        booksShelf.classList.remove('active');
+                    } else {
+                        booksGrid.classList.remove('active');
+                        booksShelf.classList.add('active');
+                        
+                        // Если выбрана 3D полка, и она еще не была создана
+                        if (booksShelf.children.length === 0) {
+                            createBookshelf();
+                        }
+                    }
+                });
+            });
+            
+            // Фильтрация книг
+            const yearFilter = document.getElementById('yearFilter');
+            const genreFilter = document.getElementById('genreFilter');
+            const bookCards = document.querySelectorAll('.book-card');
+            
+            function filterBooks() {
+                const selectedYear = yearFilter.value;
+                const selectedGenre = genreFilter.value;
+                
+                bookCards.forEach(card => {
+                    const year = card.getAttribute('data-year');
+                    const genre = card.getAttribute('data-genre');
+                    
+                    const yearMatch = selectedYear === 'all' || year === selectedYear;
+                    const genreMatch = selectedGenre === 'all' || genre.includes(selectedGenre);
+                    
+                    if (yearMatch && genreMatch) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            
+            yearFilter.addEventListener('change', filterBooks);
+            genreFilter.addEventListener('change', filterBooks);
+            
+            // Функция для создания 3D книжной полки
+            function createBookshelf() {
+                // Код для создания 3D полки с книгами будет здесь
+                // В демонстрационной версии создаем упрощенную версию
+                
+                const shelfHTML = `
+                    <div class="bookshelf-wrapper">
+                        <div class="bookshelf">
+                            <div class="shelf">
+                                <div class="book-3d" style="width: 50px; background-color: #1A3A63;">
+                                    <div class="book-spine">
+                                        <span class="book-title">Дольке Вита</span>
+                                    </div>
+                                </div>
+                                <div class="book-3d" style="width: 45px; background-color: #3E2723;">
+                                    <div class="book-spine">
+                                        <span class="book-title">Не книга имён</span>
+                                    </div>
+                                </div>
+                                <div class="book-3d" style="width: 40px; background-color: #4A5E2F;">
+                                    <div class="book-spine">
+                                        <span class="book-title">Купание в Чухломском озере</span>
+                                    </div>
+                                </div>
+                                <div class="book-3d" style="width: 35px; background-color: #7D1935;">
+                                    <div class="book-spine">
+                                        <span class="book-title">ЗАО Вражье</span>
+                                    </div>
+                                </div>
+                                <div class="book-3d" style="width: 38px; background-color: #006064;">
+                                    <div class="book-spine">
+                                        <span class="book-title">Письма из недалека</span>
+                                    </div>
+                                </div>
+                                <div class="book-3d" style="width: 42px; background-color: #BF360C;">
+                                    <div class="book-spine">
+                                        <span class="book-title">Марокко с первого взгляда</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="bookshelf-note">Функция 3D-полки находится в разработке. В полной версии сайта здесь будет интерактивная книжная полка с возможностью "взять" книгу.</p>
+                `;
+                
+                booksShelf.innerHTML = shelfHTML;
+                
+                // Добавляем стили для 3D полки
+                const style = document.createElement('style');
+                style.textContent = `
+                    .bookshelf-wrapper {
+                        perspective: 1000px;
+                        padding: 3rem 0;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    
+                    .bookshelf {
+                        width: 80%;
+                        max-width: 800px;
+                        height: 300px;
+                        position: relative;
+                        transform-style: preserve-3d;
+                        transform: rotateX(10deg);
+                    }
+                    
+                    .shelf {
+                        position: absolute;
+                        width: 100%;
+                        height: 30px;
+                        bottom: 0;
+                        background: linear-gradient(to bottom, #8B4513, #5D2906);
+                        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+                        padding-top: 20px;
+                        transform-style: preserve-3d;
+                    }
+                    
+                    .shelf::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 20px;
+                        bottom: -20px;
+                        background-color: #5D2906;
+                        transform: rotateX(-90deg);
+                        transform-origin: top;
+                    }
+                    
+                    .book-3d {
+                        height: 200px;
+                        transform-style: preserve-3d;
+                        position: relative;
+                        transform: translateZ(10px);
+                        transition: transform 0.3s ease;
+                        cursor: pointer;
+                    }
+                    
+                    .book-3d:hover {
+                        transform: translateZ(30px) translateY(-20px);
+                    }
+                    
+                    .book-spine {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-family: var(--heading-font);
+                        font-size: 0.9rem;
+                        text-align: center;
+                        padding: 0 10px;
+                        writing-mode: vertical-rl;
+                        transform: rotateZ(180deg);
+                        text-shadow: 0 0 2px rgba(0,0,0,0.5);
+                    }
+                    
+                    .bookshelf-note {
+                        text-align: center;
+                        margin-top: 2rem;
+                        font-style: italic;
+                        color: #777;
+                    }
+                `;
+                
+                document.head.appendChild(style);
+            }
+        });
+    </script>
+</body>
+</html>

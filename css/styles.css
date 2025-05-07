@@ -1,0 +1,656 @@
+/* Основные стили для сайта о писателе Игоре Михайлове */
+
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&family=Literata:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* Сброс стилей и основные настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Основная цветовая схема */
+  --primary-color: #1A3A63; /* Глубокий синий */
+  --secondary-color: #3E2723; /* Темно-коричневый */
+  --background-color: #F5F1E3; /* Кремовый */
+  --text-color: #424242; /* Темно-серый */
+  --light-grey: #E0E0E0; /* Светло-серый */
+  --accent-color: #D32F2F; /* Мягкий красный */
+  
+  /* Дополнительные настройки */
+  --header-height: 80px;
+  --footer-height: 200px;
+  --content-width: 1200px;
+  --border-radius: 4px;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Literata', Georgia, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  background-image: url('../assets/images/paper_texture.png'); /* Текстура бумаги */
+  background-attachment: fixed;
+}
+
+/* Типографика */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+blockquote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  border-left: 3px solid var(--secondary-color);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  color: var(--secondary-color);
+}
+
+/* Навигационное меню */
+.site-header {
+  background-color: rgba(245, 241, 227, 0.95);
+  border-bottom: 1px solid var(--light-grey);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.site-logo img {
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.main-menu li {
+  position: relative;
+  margin-left: 2rem;
+}
+
+.main-menu a {
+  display: block;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  position: relative;
+}
+
+.main-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.main-menu a:hover::after {
+  width: 100%;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Контейнер содержимого */
+.container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: calc(var(--header-height) + 2rem) 1rem 2rem;
+}
+
+/* Секции */
+.section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.breadcrumbs a {
+  color: var(--secondary-color);
+}
+
+.breadcrumbs span {
+  margin: 0 0.5rem;
+}
+
+/* Карточки для книг и новостей */
+.card {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-excerpt {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.card-meta {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 0.75rem;
+  color: #757575;
+}
+
+/* Сетка книг */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Временная шкала биографии */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: var(--primary-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 45%;
+  margin-bottom: 3rem;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 55%;
+}
+
+.timeline-dot {
+  position: absolute;
+  right: -48.5px;
+  top: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid var(--primary-color);
+  z-index: 1;
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+  left: -48.5px;
+}
+
+.timeline-content {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.timeline-date {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Галерея изображений */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+  transform: translateY(0);
+}
+
+/* Книга и ее обложка */
+.book-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.book-cover {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.book-cover img {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.book-cover img:hover {
+  transform: rotate(1deg) scale(1.02);
+}
+
+.book-info {
+  flex: 2;
+  min-width: 300px;
+}
+
+.book-meta {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.book-meta div {
+  margin-bottom: 0.5rem;
+}
+
+.book-description {
+  margin-bottom: 2rem;
+}
+
+/* Кнопки */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #15304F;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: #301B18;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Табы для контента */
+.tabs {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 2rem 0;
+}
+
+.tab-nav {
+  display: flex;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.tab-nav-item {
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.tab-nav-item.active {
+  border-color: var(--primary-color);
+  font-weight: 600;
+}
+
+.tab-content {
+  padding: 1.5rem 0;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Форма для скачивания */
+.download-form {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 1.5rem;
+}
+
+.download-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-file-info {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 0.75rem;
+  color: #757575;
+}
+
+/* Подвал сайта */
+.site-footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.footer-nav li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+  color: #ccc;
+}
+
+.footer-nav a:hover {
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.875rem;
+  color: #ccc;
+}
+
+/* Адаптивность */
+@media (max-width: 991px) {
+  :root {
+    --header-height: 70px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .timeline::after {
+    left: 40px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 80px;
+  }
+  
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+  
+  .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --header-height: 60px;
+  }
+  
+  .main-menu {
+    display: none;
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--light-grey);
+    box-shadow: var(--box-shadow);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  .main-menu.show {
+    display: flex;
+  }
+  
+  .main-menu li {
+    margin: 0.5rem 0;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  .book-details {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .book-cover {
+    margin-bottom: 1.5rem;
+  }
+}
