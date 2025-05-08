@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
     <header class="site-header">
@@ -121,10 +122,11 @@
                         <div class="social-media">
                             <h3>Социальные сети</h3>
                             <div class="social-links">
-                                <a href="https://facebook.com/igormihailov" target="_blank" class="social-link"><i class="social-icon facebook"></i> Facebook</a>
-                                <a href="https://vk.com/igormihailov" target="_blank" class="social-link"><i class="social-icon vk"></i> ВКонтакте</a>
-                                <a href="https://t.me/igormihailov" target="_blank" class="social-link"><i class="social-icon telegram"></i> Telegram</a>
-                                <a href="https://instagram.com/igormihailov" target="_blank" class="social-link"><i class="social-icon instagram"></i> Instagram</a>
+                                <a href="https://facebook.com/profile.php?id=100001273077223" class="social-link" target="_blank">FB</a>
+                                <a href="https://vk.com/mihailov_igor_writer" class="social-link" target="_blank">VK</a>
+                                <a href="https://t.me/vtornik_journal" class="social-link" target="_blank">TG</a>
+                                <a href="https://instagram.com/igor_mihailov_writer" class="social-link" target="_blank">IG</a>
+                                <a href="https://dzen.ru/igormihailov" class="social-link" target="_blank">Дзен</a>
                             </div>
                         </div>
                     </div>
@@ -227,9 +229,11 @@
                     <h3>Контакты</h3>
                     <p>Email: <a href="mailto:info@igormihailov.ru">info@igormihailov.ru</a></p>
                     <div class="social-links">
-                        <a href="#" class="social-link">FB</a>
-                        <a href="#" class="social-link">VK</a>
-                        <a href="#" class="social-link">TG</a>
+                        <a href="https://facebook.com/profile.php?id=100001273077223" class="social-link" target="_blank">FB</a>
+                        <a href="https://vk.com/mihailov_igor_writer" class="social-link" target="_blank">VK</a>
+                        <a href="https://t.me/vtornik_journal" class="social-link" target="_blank">TG</a>
+                        <a href="https://instagram.com/igor_mihailov_writer" class="social-link" target="_blank">IG</a>
+                        <a href="https://dzen.ru/igormihailov" class="social-link" target="_blank">Дзен</a>
                     </div>
                 </div>
             </div>
@@ -596,10 +600,10 @@
             document.querySelectorAll('.social-link').forEach(link => {
                 link.addEventListener('click', function(e) {
                     // Проверяем, что ссылка ведет не на реальную страницу
-                    if (this.getAttribute('href').includes('facebook.com/igormihailov') ||
-                        this.getAttribute('href').includes('vk.com/igormihailov') ||
-                        this.getAttribute('href').includes('t.me/igormihailov') ||
-                        this.getAttribute('href').includes('instagram.com/igormihailov')) {
+                    if (this.getAttribute('href').includes('facebook.com/profile.php?id=100001273077223') ||
+                        this.getAttribute('href').includes('vk.com/mihailov_igor_writer') ||
+                        this.getAttribute('href').includes('t.me/vtornik_journal') ||
+                        this.getAttribute('href').includes('instagram.com/igor_mihailov_writer')) {
                         e.preventDefault();
                         alert('Эта ссылка представлена в демонстрационных целях и не является действующей.');
                     }
